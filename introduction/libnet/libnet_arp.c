@@ -1,7 +1,7 @@
 /*
  * @Author: cpu_code
  * @Date: 2020-05-02 10:29:30
- * @LastEditTime: 2020-05-02 21:53:07
+ * @LastEditTime: 2020-05-02 22:01:17
  * @FilePath: \linux_network\introduction\libnet\libnet_arp.c
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
@@ -27,9 +27,9 @@ int main(int argc,char **argv)
     libnet_ptag_t p_tag; 		//定义libnet_ptag_t变量
 
     //发送者网卡地址（伪装mac）
-    uchar src_mac[MAC_ADDR_LEN] = {0x00,0x00,0x00,0x00,0x00,0x00};
+    uchar src_mac[MAC_ADDR_LEN] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
     //接收者网卡地址
-    uchar dst_mac[MAC_ADDR_LEN] = {0xff,0xff,0xff,0xff,0xff,0xff};
+    uchar dst_mac[MAC_ADDR_LEN] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
     char src_ip_str[20] = ""; //源主机IP地址（被伪装的ip）
     ulong src_ip,dst_ip = 0;
     char *net_interface = NULL;
@@ -37,10 +37,10 @@ int main(int argc,char **argv)
 
     printf("please input the aim ip:\n");
     fgets(src_ip_str, sizeof(src_ip_str), stdin);
-    src_ip_str[strlen(src_ip_str)-1]='\0';
+    src_ip_str[strlen(src_ip_str)-1] = '\0';
 
     //将字符串类型的ip转换为顺序网络字节流
-    src_ip = libnet_name2addr4(net_t,src_ip_str,LIBNET_RESOLVE);
+    src_ip = libnet_name2addr4(net_t, src_ip_str, LIBNET_RESOLVE);
 
     net_interface = pcap_lookupdev(err_buf);
     if(NULL == net_interface)
