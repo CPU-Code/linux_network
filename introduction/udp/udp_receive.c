@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:58:11
+ * @FilePath: \linux_network\introduction\udp\udp_receive.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *Binding server to port 8080
  *receive data ...
  *

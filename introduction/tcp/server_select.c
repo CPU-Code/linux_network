@@ -1,3 +1,11 @@
+/*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:57:19
+ * @FilePath: \linux_network\introduction\tcp\server_select.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/wait.h>

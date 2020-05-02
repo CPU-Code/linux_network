@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:57:47
+ * @FilePath: \linux_network\introduction\udp\byte_order.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *un.s = 102H
  *un.c[0] = 2
  *un.c[1] = 1

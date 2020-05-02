@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:57:50
+ * @FilePath: \linux_network\introduction\udp\htonl_s.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *htonl(0x01020304) = 0x04030201 
  *htons(0x0102) = 0x0201 
  */

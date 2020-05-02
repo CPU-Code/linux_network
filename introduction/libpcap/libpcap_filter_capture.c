@@ -1,13 +1,12 @@
 /*
- *cpucode@ubuntu:~/cpucodefile/network/libpcap$ gcc libpcap_filter_capture.c 
- */tmp/ccUgNOMy.o: In function `main':
- *libpcap_filter_capture.c:(.text+0xc3): undefined reference to `pcap_lookupdev'
- *libpcap_filter_capture.c:(.text+0x112): undefined reference to `pcap_open_live'
- *libpcap_filter_capture.c:(.text+0x13d): undefined reference to `pcap_lookupnet'
- *libpcap_filter_capture.c:(.text+0x18d): undefined reference to `pcap_compile'
- *libpcap_filter_capture.c:(.text+0x1b6): undefined reference to `pcap_setfilter'
- *libpcap_filter_capture.c:(.text+0x1df): undefined reference to `pcap_next'
- *collect2: error: ld returned 1 exit status
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:53:43
+ * @FilePath: \linux_network\introduction\libpcap\libpcap_filter_capture.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *cpucode@ubuntu:~/cpucodefile/network/libpcap$ gcc libpcap_filter_capture.c -lpcap
  *cpucode@ubuntu:~/cpucodefile/network/libpcap$ ./a.out 
  *Segmentation fault (core dumped)

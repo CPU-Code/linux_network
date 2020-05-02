@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:57:59
+ * @FilePath: \linux_network\introduction\udp\inet_pton.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *ip_uint = 199365804
  *ip_uint = 172.20.226.11
  */

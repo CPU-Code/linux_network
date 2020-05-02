@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:55:19
+ * @FilePath: \linux_network\introduction\libpcap\libprap_capture.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *cpucode@ubuntu:~/cpucodefile/network/libpcap$ ./a.out 
  *Segmentation fault (core dumped)
  *cpucode@ubuntu:~/cpucodefile/network/libpcap$ sudo ./a.out 

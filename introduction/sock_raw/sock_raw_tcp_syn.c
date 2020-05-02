@@ -1,3 +1,11 @@
+/*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:56:59
+ * @FilePath: \linux_network\introduction\sock_raw\sock_raw_tcp_syn.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <netinet/in.h>

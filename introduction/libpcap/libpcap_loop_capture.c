@@ -1,4 +1,12 @@
 /*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:55:16
+ * @FilePath: \linux_network\introduction\libpcap\libpcap_loop_capture.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
+/*
  *cpucode@ubuntu:~/cpucodefile/network/libpcap$ gcc libpcap_loop_capture.c -lpcap
  *capcpucode@ubuntu:~/cpucodefile/network/libpcap$ ./a.out 
  *Segmentation fault (core dumped)
@@ -72,7 +80,7 @@ int main(int argc, char *argv[])
     pcap_compile(pcap_handle, &bpf_filter, bpf_filter_string, 0, net_mask);
     pcap_setfilter(pcap_handle, &bpf_filter);//设置过滤规则
 
-    if(pcap_loop(pcap_handle,-1,ethernet_protocol_callback,NULL) < 0)
+    if(pcap_loop(pcap_handle, -1, ethernet_protocol_callback, NULL) < 0)
     {
         perror("pcap_loop");
     }

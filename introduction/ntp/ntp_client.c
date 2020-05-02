@@ -1,3 +1,11 @@
+/*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:56:46
+ * @FilePath: \linux_network\introduction\ntp\ntp_client.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
 #include <sys/socket.h>
 #include <sys/wait.h>
 #include <stdio.h>

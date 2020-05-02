@@ -1,3 +1,11 @@
+/*
+ * @Author: cpu_code
+ * @Date: 2020-05-02 10:29:30
+ * @LastEditTime: 2020-05-02 21:57:13
+ * @FilePath: \linux_network\introduction\tcp\getaddrinfo.c
+ * @Gitee: https://gitee.com/cpu_code
+ * @CSDN: https://blog.csdn.net/qq_44226094
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
