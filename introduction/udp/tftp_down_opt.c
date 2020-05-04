@@ -19,16 +19,13 @@
 static int sockfd;
 static struct sockaddr_in client_addr;
 
-static void sig_dispose(int sig)
-{
-    if(SIGINT == sig)
-    {
-        close(sockfd);
-        puts("\n nclose");
-        exit(0);
-    }
-}
-
+static void sig_dispose(int sig);
+/**
+ * @function: 
+ * @parameter: 
+ * @return: 
+ * @note: 
+ */
 int main(int argc, char *argv[])
 {
     struct sockaddr_in dest_addr;
@@ -47,17 +44,19 @@ int main(int argc, char *argv[])
     {
         exit(-1);
     }
+
     bzero(&dest_addr, sizeof(dest_addr));
     dest_addr.sin_family = AF_INET;
     dest_addr.sin_port = htons(8080);
     inet_pton(AF_INET,"192.168.43.76", &dest_addr.sin_addr.s_addr);
 
     bzero(send_buf, sizeof(send_buf));
-    len = sprintf(send_buf,"%c%c%s%c%s%c%s%c%s%c%s%c%d%c",0,1,"01.jpg",0,
-                                                              "octet",0,
-                                                              "tsize",0,
-                                                              "0",0,
-                                                              "blksize",0,600,0);
+    len = sprintf(send_buf,"%c%c%s%c%s%c%s%c%s%c%s%c%d%c", 0, 1, "01.jpg", 0,
+                                                                 "octet", 0,
+                                                                 "tsize",0,
+                                                                 "0", 0,
+                                                                 "blksize", 0, 
+                                                                 600, 0);
     sendto(sockfd, send_buf, len, 0, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
     len = recvfrom(sockfd,
                    recv_buf, 
@@ -74,7 +73,7 @@ int main(int argc, char *argv[])
     len = sprintf(send_buf, "%c%c%c%c", 0, 4, 0, 0);
     sendto(sockfd, send_buf, len, 0, (struct sockaddr *)&client_addr,sizeof(client_addr));
     
-    fp = fopen("01.jpg","wb");
+    fp = fopen("01.jpg", "wb");
     if(fp == NULL)
     {
         perror("fopen");
@@ -121,4 +120,14 @@ int main(int argc, char *argv[])
     close(sockfd);
     fclose(fp);
     return 0;
+}
+
+static void sig_dispose(int sig)
+{
+    if(SIGINT == sig)
+    {
+        close(sockfd);
+        puts("\n nclose");
+        exit(0);
+    }
 }

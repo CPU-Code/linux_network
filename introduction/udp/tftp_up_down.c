@@ -1,7 +1,7 @@
 /*
  * @Author: cpu_code
  * @Date: 2020-05-02 10:29:30
- * @LastEditTime: 2020-05-02 21:58:08
+ * @LastEditTime: 2020-05-04 14:31:03
  * @FilePath: \linux_network\introduction\udp\tftp_up_down.c
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
@@ -241,10 +241,12 @@ char mygetch()
 {
     struct termios oldt, newt;
     char ch;
+
     tcgetattr(STDIN_FILENO, &oldt);
     newt = oldt;
     newt.c_lflag &= ~(ICANON | ECHO);
     tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+    
     ch = getchar();
     tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
     return ch;
