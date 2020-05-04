@@ -1,14 +1,14 @@
 /*
  * @Author: cpu_code
  * @Date: 2020-05-02 10:29:30
- * @LastEditTime: 2020-05-03 22:33:06
+ * @LastEditTime: 2020-05-03 22:37:13
  * @FilePath: \linux_network\introduction\udp\byte_order.c
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
  */
 #include <stdio.h>
 /**
- * @function: 
+ * @function: 判断主机的大小端
  * @parameter: 
  * @return: 
  * @note: 
