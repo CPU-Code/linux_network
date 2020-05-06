@@ -1,13 +1,16 @@
 /*
  * @Author: cpu_code
  * @Date: 2020-05-05 20:38:21
- * @LastEditTime: 2020-05-05 20:57:40
+ * @LastEditTime: 2020-05-06 20:42:04
  * @FilePath: \linux_network\UNIX_net\lib\readlinel.c
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
  */
 /* include readline */
 #include	"unp.h"
+
+ssize_t Readline(int fd, void *ptr, size_t maxlen);
+ssize_t readline(int fd, void *vptr, size_t maxlen);
 
 /* PAINFULLY SLOW VERSION -- example only */
 ssize_t readline(int fd, void *vptr, size_t maxlen)

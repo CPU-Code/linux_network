@@ -1,13 +1,16 @@
 /*
  * @Author: cpu_code
  * @Date: 2020-05-05 20:14:04
- * @LastEditTime: 2020-05-05 20:36:45
+ * @LastEditTime: 2020-05-06 20:41:35
  * @FilePath: \linux_network\UNIX_net\lib\writen.c
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
  */
 /* include writen */
 #include	"unp.h"
+
+void Writen(int fd, void *ptr, size_t nbytes);
+ssize_t writen(int fd, const void *vptr, size_t n);
 
 /* Write "n" bytes to a descriptor. */
 ssize_t writen(int fd, const void *vptr, size_t n)
