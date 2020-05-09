@@ -1,49 +1,82 @@
 # linux_network
 
 ## 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+**个人学习记录**
 
-## 软件架构
-软件架构说明
+Linux网络编程代码仓库
 
+个人代码托管：
 
-## 安装教程
+&emsp; [gitee：https://gitee.com/cpu_code](https://gitee.com/cpu_code)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+个人博客：
+
+&emsp; [CDNS：https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+
+## 环境教程
+&emsp; 环境使用：ubuntu
+
+&emsp; 编辑软件：vscode
+
+&emsp; UNIX_net 文件下：
+
+&emsp; &emsp;[环境搭建：](https://gitee.com/cpu_code/linux_network/blob/master/UNIX_net/%E9%85%8D%E7%BD%AEunp%E7%8E%AF%E5%A2%83.md)
+
+&emsp; &emsp;编译使用：
+```
+gcc xxx.c -lunp
+```
 
 ## 使用说明
 
-#### include 头文件
-    net
+#### include 
+&emsp; 介绍：头文件，拷贝的ubuntu的Linux里的头文件
 
-netpacket
+&emsp; net
 
-sys
+&emsp; netpacket
 
-x86_64-linux-gnu
+&emsp; sys
 
-##### introduction
-##### UNIX_net
+&emsp; x86_64-linux-gnu
+
+#### introduction
+&emsp; 介绍：个人快速入门的代码
+
+&emsp; &emsp; arp
+
+&emsp; &emsp; libent
+
+&emsp; &emsp; libpcap
+
+&emsp; &emsp; ntp
+
+&emsp; &emsp; sock_raw
+
+&emsp; &emsp; tcp
+
+&emsp; &emsp; udp
+
+#### UNIX_net
+&emsp; 介绍：UNIX网络编程的代码，个人学习
+
+&emsp; &emsp;头文件：
+
+&emsp; &emsp; &emsp;包裹函数(unp.h) / 配置项(config.h) / 和结构体(sum.h)
+
+&emsp; &emsp; I_O:
+
+&emsp; &emsp; 介绍：I/O复用
+
+&emsp; &emsp; socket
+
+&emsp; &emsp; 介绍：基本套接字编程
+
+&emsp; &emsp; tcp
+
+&emsp; &emsp; tcp客户端服务器
 
 
+&emsp; &emsp; udp
 
-## 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-## 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+&emsp; &emsp; udp客户端服务器
