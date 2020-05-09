@@ -1,7 +1,7 @@
 <!--
  * @Author: cpu_code
  * @Date: 2020-05-04 15:27:19
- * @LastEditTime: 2020-05-04 15:29:24
+ * @LastEditTime: 2020-05-09 19:07:01
  * @FilePath: \linux_network\UNIX_net\配置unp环境.md
  * @Gitee: https://gitee.com/cpu_code
  * @CSDN: https://blog.csdn.net/qq_44226094
@@ -11,13 +11,13 @@
 
  
 2.解压
-
+```sell
 tar -zxvf unpv13e.tar.gz
 cd unpv13e/
-
+```
 
 3 配置
-
+```
   ./configure    # try to figure out all implementation differences
    cd lib         # build the basic library that all programs need
     make           # use "gmake" everywhere on BSD/OS systems
@@ -30,18 +30,19 @@ cd ../libxti   # only if your system supports XTI
     cd ../intro    # build and test a basic client program
     make daytimetcpcli
     ./daytimetcpcli 127.0.0.1
-
+```
 这样配置就可以，不管错误信息。
 
- 
+```
 cd ..   //回到 unpv13e 目录 
 sudo cp libunp.a /usr/lib 
 sudo cp libunp.a /usr/lib64
- 
+```
+```
 vim lib/unp.h //将 unp.h 中#include "../config.h"修改为#include "config.h" 
 sudo cp lib/unp.h /usr/include 
 sudo cp config.h /usr/include
-
+```
 这里就是apue.h及err_sys的错误了
 : undefined reference to `err_quit'
 : undefined reference to`err_sys'
@@ -73,7 +74,7 @@ vim my_err.h
 每个项目添加一下头文件my_err.h
 
 5.  内容：
-
+```
 #include "apue.h"
 #include <errno.h> /* for definition of errno */
 #include <stdarg.h> /* ISO C variable aruments */
@@ -173,4 +174,4 @@ err_doit(int errnoflag, int error, const char *fmt, va_list ap)
    fputs(buf, stderr);
    fflush(NULL); /* flushes all stdio output streams */
 }
- 
+```
